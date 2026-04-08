@@ -1,73 +1,85 @@
-# React + TypeScript + Vite
+# Loja de Games React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Front-end application for a game store, built with React and TypeScript, consuming a REST API developed with NestJS.
 
-Currently, two official plugins are available:
+## Technologies
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React Router DOM](https://reactrouter.com/)
+- [Axios](https://axios-http.com/)
+- [React Spinners](https://www.davidhu.io/react-spinners/)
+- [Lucide React](https://lucide.dev/)
 
-## React Compiler
+## Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+# Install dependencies
+npm install
 
-## Expanding the ESLint configuration
+# Run in development mode
+npm run dev
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Build for production
+npm run build
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Backend
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+API deployed on Render (no authentication required):
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
+https://lojagames-nest.onrender.com
+```
+
+Swagger documentation: https://lojagames-nest.onrender.com/swagger
+
+## TODO
+
+- [x] Project setup with Vite, React and TypeScript
+- [x] Tailwind CSS configuration
+- [x] Categoria and Produto models
+- [x] Service class with listar, cadastrar, atualizar and deletar methods
+- [x] Navbar component
+- [x] Footer component
+- [x] Home page
+- [x] Cadastro page
+- [x] Login page
+- [x] Categoria CRUD (ListarCategorias, FormCategoria, DeletarCategoria)
+- [x] FormProduto with category select
+- [x] React Router DOM routes configuration
+- [ ] ListarProdutos with product cards
+- [ ] DeletarProduto
+- [ ] Navbar product search functionality
+- [ ] Perfil page
+- [ ] Carrinho page
+
+## Author
+
+<table>
+  <tbody>
+    <tr>
+      <td align="center" width="400">
+        <strong>Bianca Caetano</strong><br/>
+        <sub>Software Engineering and Systems Analysis & Development Student</sub><br/><br/>
+        <a href="https://www.linkedin.com/in/bia-caetano" target="_blank">
+          <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+        </a>
+        &nbsp;
+        <a href="https://github.com/bia024" target="_blank">
+          <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"/>
+        </a>
+        &nbsp;
+        <a href="mailto:beahreis4@gmail.com">
+          <img src="https://img.shields.io/badge/beahreis4%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Gmail"/>
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+## License
+
+See [LICENSE](./LICENSE.md) for more information.
