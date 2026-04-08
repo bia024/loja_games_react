@@ -1,85 +1,81 @@
 # Loja de Games React
 
-Front-end application for a game store, built with React and TypeScript, consuming a REST API developed with NestJS.
+Desenvolvido por **Bianca Caetano** — Estudante de Engenharia de Software e Análise e Desenvolvimento de Sistemas.
 
-## Technologies
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bia-caetano)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/bia024)
+[![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:beahreis4@gmail.com)
 
-- [React](https://react.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Vite](https://vitejs.dev/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [React Router DOM](https://reactrouter.com/)
-- [Axios](https://axios-http.com/)
-- [React Spinners](https://www.davidhu.io/react-spinners/)
-- [Lucide React](https://lucide.dev/)
+---
 
-## Getting Started
+Aplicação front-end de uma loja de games desenvolvida com React e TypeScript, consumindo uma API REST construída com NestJS.
+
+---
+
+## Tecnologias
+
+| Tecnologia | Versão |
+|---|---|
+| [React](https://react.dev/) | 19 |
+| [TypeScript](https://www.typescriptlang.org/) | 5 |
+| [Vite](https://vitejs.dev/) | 6 |
+| [Tailwind CSS](https://tailwindcss.com/) | 4 |
+| [React Router DOM](https://reactrouter.com/) | 7 |
+| [Axios](https://axios-http.com/) | 1 |
+| [React Spinners](https://www.davidhu.io/react-spinners/) | 0.15 |
+| [Lucide React](https://lucide.dev/) | 0.511 |
+
+---
+
+## Como executar
 
 ```bash
-# Install dependencies
+# Instalar dependências
 npm install
 
-# Run in development mode
+# Executar em modo de desenvolvimento
 npm run dev
 
-# Build for production
+# Gerar build de produção
 npm run build
 ```
 
+---
+
 ## Backend
 
-API deployed on Render (no authentication required):
+API deployada no Render, sem autenticação:
 
 ```
 https://lojagames-nest.onrender.com
 ```
 
-Swagger documentation: https://lojagames-nest.onrender.com/swagger
+Documentação Swagger: https://lojagames-nest.onrender.com/swagger
+
+---
 
 ## TODO
 
-- [x] Project setup with Vite, React and TypeScript
-- [x] Tailwind CSS configuration
-- [x] Categoria and Produto models
-- [x] Service class with listar, cadastrar, atualizar and deletar methods
-- [x] Navbar component
-- [x] Footer component
-- [x] Home page
-- [x] Cadastro page
-- [x] Login page
-- [x] Categoria CRUD (ListarCategorias, FormCategoria, DeletarCategoria)
-- [x] FormProduto with category select
-- [x] React Router DOM routes configuration
-- [ ] ListarProdutos with product cards
+- [x] Configuração do projeto com Vite, React e TypeScript
+- [x] Configuração do Tailwind CSS
+- [x] Models Categoria e Produto
+- [x] Service com os métodos listar, cadastrar, atualizar e deletar
+- [x] Componente Navbar
+- [x] Componente Footer
+- [x] Página Home
+- [x] Página Cadastro
+- [x] Página Login
+- [x] CRUD de Categoria (ListarCategorias, FormCategoria, DeletarCategoria)
+- [x] FormProduto com select de categoria
+- [x] Configuração de rotas com React Router DOM
+- [ ] ListarProdutos com cards de produto
 - [ ] DeletarProduto
-- [ ] Navbar product search functionality
-- [ ] Perfil page
-- [ ] Carrinho page
+- [ ] Funcionalidade de busca na Navbar
+- [ ] Página de Perfil
+- [ ] Página de Carrinho
 
-## Author
+---
 
-<table>
-  <tbody>
-    <tr>
-      <td align="center" width="400">
-        <strong>Bianca Caetano</strong><br/>
-        <sub>Software Engineering and Systems Analysis & Development Student</sub><br/><br/>
-        <a href="https://www.linkedin.com/in/bia-caetano" target="_blank">
-          <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-        </a>
-        &nbsp;
-        <a href="https://github.com/bia024" target="_blank">
-          <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"/>
-        </a>
-        &nbsp;
-        <a href="mailto:beahreis4@gmail.com">
-          <img src="https://img.shields.io/badge/beahreis4%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Gmail"/>
-        </a>
-      </td>
-    </tr>
-  </tbody>
-</table>
+## Licença
 
-## License
-
-See [LICENSE](./LICENSE.md) for more information.
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](./LICENSE.md) para mais detalhes.
