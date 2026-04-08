@@ -8,35 +8,39 @@ Desenvolvido por **Bianca Caetano** — Estudante de Engenharia de Software e An
 
 ---
 
-Aplicação front-end de uma loja de games desenvolvida com React e TypeScript, consumindo uma API REST construída com NestJS.
+Esse projeto é o front-end de uma loja de games, desenvolvido como parte da minha jornada de aprendizado em desenvolvimento web. A aplicação consome uma API REST feita com NestJS e cobre o CRUD completo de categorias e produtos.
+
+Foi construído com React, TypeScript e Tailwind CSS, seguindo boas práticas de componentização e organização de código.
 
 ---
 
-## Tecnologias
+## O que foi usado
 
 | Tecnologia | Versão |
 |---|---|
-| [React](https://react.dev/) | 19 |
-| [TypeScript](https://www.typescriptlang.org/) | 5 |
-| [Vite](https://vitejs.dev/) | 6 |
-| [Tailwind CSS](https://tailwindcss.com/) | 4 |
-| [React Router DOM](https://reactrouter.com/) | 7 |
-| [Axios](https://axios-http.com/) | 1 |
-| [React Spinners](https://www.davidhu.io/react-spinners/) | 0.15 |
-| [Lucide React](https://lucide.dev/) | 0.511 |
+| [React](https://react.dev/) | 19.2.4 |
+| [TypeScript](https://www.typescriptlang.org/) | 6.0.2 |
+| [Vite](https://vitejs.dev/) | 8.0.4 |
+| [Tailwind CSS](https://tailwindcss.com/) | 4.2.2 |
+| [React Router DOM](https://reactrouter.com/) | 7.14.0 |
+| [Axios](https://axios-http.com/) | 1.15.0 |
+| [React Spinners](https://www.davidhu.io/react-spinners/) | 0.17.0 |
+| [Lucide React](https://lucide.dev/) | 1.7.0 |
 
 ---
 
-## Como executar
+## Como rodar na sua máquina
+
+Clone o repositório, instale as dependências e rode:
 
 ```bash
-# Instalar dependências
 npm install
-
-# Executar em modo de desenvolvimento
 npm run dev
+```
 
-# Gerar build de produção
+Para gerar o build de produção:
+
+```bash
 npm run build
 ```
 
@@ -44,35 +48,32 @@ npm run build
 
 ## Backend
 
-API deployada no Render, sem autenticação:
+A API está deployada no Render. Na primeira requisição pode demorar um pouco para responder — é normal, o servidor hiberna quando fica sem uso.
 
 ```
 https://lojagames-nest.onrender.com
 ```
 
-Documentação Swagger: https://lojagames-nest.onrender.com/swagger
+Documentação completa: https://lojagames-nest.onrender.com/swagger
 
 ---
 
-## TODO
+## O que já está pronto e o que ainda vem por aí
 
 - [x] Configuração do projeto com Vite, React e TypeScript
-- [x] Configuração do Tailwind CSS
+- [x] Tailwind CSS
 - [x] Models Categoria e Produto
-- [x] Service com os métodos listar, cadastrar, atualizar e deletar
-- [x] Componente Navbar
-- [x] Componente Footer
-- [x] Página Home
-- [x] Página Cadastro
-- [x] Página Login
-- [x] CRUD de Categoria (ListarCategorias, FormCategoria, DeletarCategoria)
-- [x] FormProduto com select de categoria
-- [x] Configuração de rotas com React Router DOM
-- [ ] ListarProdutos com cards de produto
-- [ ] DeletarProduto
-- [ ] Funcionalidade de busca na Navbar
+- [x] Service com listar, cadastrar, atualizar e deletar
+- [x] Navbar, Footer e Home
+- [x] Cadastro e Login
+- [x] CRUD completo de Categoria
+- [x] Formulário de Produto com seleção de categoria
+- [x] Rotas com React Router DOM
+- [ ] Listagem de produtos com cards
+- [ ] Deletar produto
+- [ ] Busca de produtos na Navbar
 - [ ] Página de Perfil
-- [ ] Página de Carrinho
+- [ ] Carrinho de compras
 
 ---
 
